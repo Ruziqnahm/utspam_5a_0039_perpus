@@ -151,7 +151,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      'Rp ${transaction.totalCost.toStringAsFixed(0)}',
+                                      'Rp${transaction.totalCost.toStringAsFixed(0)}',
                                       style: const TextStyle(
                                         color: Color(0xFF00BCD4),
                                         fontSize: 16,

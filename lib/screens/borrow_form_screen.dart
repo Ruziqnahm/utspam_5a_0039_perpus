@@ -187,7 +187,7 @@ class _BorrowFormScreenState extends State<BorrowFormScreen> {
                           ),
                           const SizedBox(height: 16),
                           Text(
-                            'Rp ${widget.book.pricePerDay.toStringAsFixed(0)}/day',
+                            'Rp${widget.book.pricePerDay.toStringAsFixed(0)}/day',
                             style: const TextStyle(
                               color: Color(0xFF00BCD4),
                               fontSize: 18,
@@ -429,7 +429,7 @@ class _BorrowFormScreenState extends State<BorrowFormScreen> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Rp ${_totalCost.toStringAsFixed(0)}',
+                      'Rp${_totalCost.toStringAsFixed(0)}',
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 32,

@@ -121,7 +121,7 @@ class BookListScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Rp ${book.pricePerDay.toStringAsFixed(0)}/day',
+                                'Rp${book.pricePerDay.toStringAsFixed(0)}/day',
                                 style: const TextStyle(
                                   color: Color(0xFF00BCD4),
                                   fontSize: 16,

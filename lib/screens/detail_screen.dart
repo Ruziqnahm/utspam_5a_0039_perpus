@@ -287,7 +287,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Rp ${transaction.totalCost.toStringAsFixed(0)}',
+                    'Rp${transaction.totalCost.toStringAsFixed(0)}',
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 36,

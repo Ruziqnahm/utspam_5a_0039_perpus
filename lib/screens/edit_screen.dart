@@ -179,7 +179,7 @@ class _EditScreenState extends State<EditScreen> {
                           ),
                           const SizedBox(height: 16),
                           Text(
-                            'Rp ${_pricePerDay.toStringAsFixed(0)}/day',
+                            'Rp${_pricePerDay.toStringAsFixed(0)}/day',
                             style: const TextStyle(
                               color: Color(0xFF00BCD4),
                               fontSize: 18,
@@ -387,7 +387,7 @@ class _EditScreenState extends State<EditScreen> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Rp ${_totalCost.toStringAsFixed(0)}',
+                      'Rp${_totalCost.toStringAsFixed(0)}',
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 32,
