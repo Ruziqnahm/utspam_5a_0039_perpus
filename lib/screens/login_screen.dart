@@ -353,8 +353,16 @@ class _SquarePatternPainter extends CustomPainter {
 
     const squareSize = 40.0;
 
-    for (double x = -squareSize; x <= size.width + squareSize; x += squareSize) {
-      for (double y = -squareSize; y <= size.height + squareSize * 4; y += squareSize) {
+    for (
+      double x = -squareSize;
+      x <= size.width + squareSize;
+      x += squareSize
+    ) {
+      for (
+        double y = -squareSize;
+        y <= size.height + squareSize * 4;
+        y += squareSize
+      ) {
         canvas.drawRect(Rect.fromLTWH(x, y, squareSize, squareSize), paint);
       }
     }
