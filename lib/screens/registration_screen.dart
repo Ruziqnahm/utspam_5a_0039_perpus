@@ -144,11 +144,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
       ),
       body: Stack(
         children: [
-          Positioned.fill(
-            child: CustomPaint(
-              painter: _SquarePatternPainter(),
-            ),
-          ),
+          Positioned.fill(child: CustomPaint(painter: _SquarePatternPainter())),
           SafeArea(
             child: FadeTransition(
               opacity: _fadeAnimation,
@@ -162,16 +158,14 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                       children: [
                         Text(
                           'Create Account',
-                          style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                                color: Colors.white,
-                              ),
+                          style: Theme.of(context).textTheme.displayLarge
+                              ?.copyWith(color: Colors.white),
                         ),
                         const SizedBox(height: 8),
                         Text(
                           'Join our library community today',
-                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                color: Colors.white.withOpacity(0.9),
-                              ),
+                          style: Theme.of(context).textTheme.bodyMedium
+                              ?.copyWith(color: Colors.white.withOpacity(0.9)),
                         ),
                         const SizedBox(height: 32),
                         TextFormField(
@@ -179,25 +173,44 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           style: const TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             labelText: 'Full Name',
-                            labelStyle: TextStyle(color: Colors.white.withOpacity(0.9)),
-                            prefixIcon: const Icon(Icons.person_outline, color: Colors.white),
+                            labelStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.9),
+                            ),
+                            prefixIcon: const Icon(
+                              Icons.person_outline,
+                              color: Colors.white,
+                            ),
                             hintText: 'Enter your full name',
-                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
+                            hintStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.6),
+                            ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: BorderSide(color: Colors.white.withOpacity(0.5), width: 1.5),
+                              borderSide: BorderSide(
+                                color: Colors.white.withOpacity(0.5),
+                                width: 1.5,
+                              ),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.white, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.white,
+                                width: 2,
+                              ),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 1.5),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 1.5,
+                              ),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 2,
+                              ),
                             ),
                             filled: true,
                             fillColor: const Color(0xFF00BCD4),
@@ -216,25 +229,44 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           style: const TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             labelText: 'NIK',
-                            labelStyle: TextStyle(color: Colors.white.withOpacity(0.9)),
-                            prefixIcon: const Icon(Icons.credit_card, color: Colors.white),
+                            labelStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.9),
+                            ),
+                            prefixIcon: const Icon(
+                              Icons.credit_card,
+                              color: Colors.white,
+                            ),
                             hintText: 'Enter your NIK',
-                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
+                            hintStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.6),
+                            ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: BorderSide(color: Colors.white.withOpacity(0.5), width: 1.5),
+                              borderSide: BorderSide(
+                                color: Colors.white.withOpacity(0.5),
+                                width: 1.5,
+                              ),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.white, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.white,
+                                width: 2,
+                              ),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 1.5),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 1.5,
+                              ),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 2,
+                              ),
                             ),
                             filled: true,
                             fillColor: const Color(0xFF00BCD4),
@@ -253,25 +285,44 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           style: const TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             labelText: 'Email',
-                            labelStyle: TextStyle(color: Colors.white.withOpacity(0.9)),
-                            prefixIcon: const Icon(Icons.email_outlined, color: Colors.white),
+                            labelStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.9),
+                            ),
+                            prefixIcon: const Icon(
+                              Icons.email_outlined,
+                              color: Colors.white,
+                            ),
                             hintText: 'Enter your email',
-                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
+                            hintStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.6),
+                            ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: BorderSide(color: Colors.white.withOpacity(0.5), width: 1.5),
+                              borderSide: BorderSide(
+                                color: Colors.white.withOpacity(0.5),
+                                width: 1.5,
+                              ),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.white, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.white,
+                                width: 2,
+                              ),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 1.5),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 1.5,
+                              ),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 2,
+                              ),
                             ),
                             filled: true,
                             fillColor: const Color(0xFF00BCD4),
@@ -293,25 +344,44 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           style: const TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             labelText: 'Address',
-                            labelStyle: TextStyle(color: Colors.white.withOpacity(0.9)),
-                            prefixIcon: const Icon(Icons.home_outlined, color: Colors.white),
+                            labelStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.9),
+                            ),
+                            prefixIcon: const Icon(
+                              Icons.home_outlined,
+                              color: Colors.white,
+                            ),
                             hintText: 'Enter your address',
-                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
+                            hintStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.6),
+                            ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: BorderSide(color: Colors.white.withOpacity(0.5), width: 1.5),
+                              borderSide: BorderSide(
+                                color: Colors.white.withOpacity(0.5),
+                                width: 1.5,
+                              ),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.white, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.white,
+                                width: 2,
+                              ),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 1.5),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 1.5,
+                              ),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 2,
+                              ),
                             ),
                             filled: true,
                             fillColor: const Color(0xFF00BCD4),
@@ -330,25 +400,44 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           style: const TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             labelText: 'Phone Number',
-                            labelStyle: TextStyle(color: Colors.white.withOpacity(0.9)),
-                            prefixIcon: const Icon(Icons.phone_outlined, color: Colors.white),
+                            labelStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.9),
+                            ),
+                            prefixIcon: const Icon(
+                              Icons.phone_outlined,
+                              color: Colors.white,
+                            ),
                             hintText: 'Enter your phone number',
-                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
+                            hintStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.6),
+                            ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: BorderSide(color: Colors.white.withOpacity(0.5), width: 1.5),
+                              borderSide: BorderSide(
+                                color: Colors.white.withOpacity(0.5),
+                                width: 1.5,
+                              ),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.white, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.white,
+                                width: 2,
+                              ),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 1.5),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 1.5,
+                              ),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 2,
+                              ),
                             ),
                             filled: true,
                             fillColor: const Color(0xFF00BCD4),
@@ -369,25 +458,44 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           style: const TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             labelText: 'Username',
-                            labelStyle: TextStyle(color: Colors.white.withOpacity(0.9)),
-                            prefixIcon: const Icon(Icons.account_circle_outlined, color: Colors.white),
+                            labelStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.9),
+                            ),
+                            prefixIcon: const Icon(
+                              Icons.account_circle_outlined,
+                              color: Colors.white,
+                            ),
                             hintText: 'Choose a username',
-                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
+                            hintStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.6),
+                            ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: BorderSide(color: Colors.white.withOpacity(0.5), width: 1.5),
+                              borderSide: BorderSide(
+                                color: Colors.white.withOpacity(0.5),
+                                width: 1.5,
+                              ),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.white, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.white,
+                                width: 2,
+                              ),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 1.5),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 1.5,
+                              ),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 2,
+                              ),
                             ),
                             filled: true,
                             fillColor: const Color(0xFF00BCD4),
@@ -406,10 +514,17 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           style: const TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             labelText: 'Password',
-                            labelStyle: TextStyle(color: Colors.white.withOpacity(0.9)),
-                            prefixIcon: const Icon(Icons.lock_outline, color: Colors.white),
+                            labelStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.9),
+                            ),
+                            prefixIcon: const Icon(
+                              Icons.lock_outline,
+                              color: Colors.white,
+                            ),
                             hintText: 'Create a password',
-                            hintStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
+                            hintStyle: TextStyle(
+                              color: Colors.white.withOpacity(0.6),
+                            ),
                             suffixIcon: IconButton(
                               icon: Icon(
                                 _obscurePassword
@@ -425,19 +540,31 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: BorderSide(color: Colors.white.withOpacity(0.5), width: 1.5),
+                              borderSide: BorderSide(
+                                color: Colors.white.withOpacity(0.5),
+                                width: 1.5,
+                              ),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.white, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.white,
+                                width: 2,
+                              ),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 1.5),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 1.5,
+                              ),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: const BorderSide(color: Colors.redAccent, width: 2),
+                              borderSide: const BorderSide(
+                                color: Colors.redAccent,
+                                width: 2,
+                              ),
                             ),
                             filled: true,
                             fillColor: const Color(0xFF00BCD4),
@@ -491,7 +618,8 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           children: [
                             Text(
                               'Already have an account? ',
-                              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              style: Theme.of(context).textTheme.bodyMedium
+                                  ?.copyWith(
                                     color: Colors.white.withOpacity(0.9),
                                   ),
                             ),
@@ -541,8 +669,16 @@ class _SquarePatternPainter extends CustomPainter {
 
     const squareSize = 40.0;
 
-    for (double x = -squareSize; x <= size.width + squareSize; x += squareSize) {
-      for (double y = -squareSize; y <= size.height + squareSize * 4; y += squareSize) {
+    for (
+      double x = -squareSize;
+      x <= size.width + squareSize;
+      x += squareSize
+    ) {
+      for (
+        double y = -squareSize;
+        y <= size.height + squareSize * 4;
+        y += squareSize
+      ) {
         canvas.drawRect(Rect.fromLTWH(x, y, squareSize, squareSize), paint);
       }
     }
