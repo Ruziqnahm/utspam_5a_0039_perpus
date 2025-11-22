@@ -77,12 +77,12 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     border: Border.all(
                       color: _getStatusColor(
                         transaction.status,
-                      ).withOpacity(0.3),
+                      ).withValues(alpha: 0.3),
                       width: 2,
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.05),
+                        color: Colors.black.withValues(alpha: 0.05),
                         blurRadius: 10,
                         offset: const Offset(0, 4),
                       ),
@@ -113,7 +113,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                               borderRadius: BorderRadius.circular(10),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.black.withOpacity(0.2),
+                                  color: Colors.black.withValues(alpha: 0.2),
                                   blurRadius: 6,
                                   offset: const Offset(0, 3),
                                 ),
@@ -183,7 +183,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                                       decoration: BoxDecoration(
                                         color: _getStatusColor(
                                           transaction.status,
-                                        ).withOpacity(0.1),
+                                        ).withValues(alpha: 0.1),
                                         borderRadius: BorderRadius.circular(12),
                                         border: Border.all(
                                           color: _getStatusColor(

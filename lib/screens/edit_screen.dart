@@ -140,7 +140,7 @@ class _EditScreenState extends State<EditScreen> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.05),
+                      color: Colors.black.withValues(alpha: 0.05),
                       blurRadius: 10,
                       offset: const Offset(0, 4),
                     ),
@@ -155,7 +155,7 @@ class _EditScreenState extends State<EditScreen> {
                         borderRadius: BorderRadius.circular(12),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
+                            color: Colors.black.withValues(alpha: 0.2),
                             blurRadius: 8,
                             offset: const Offset(0, 4),
                           ),
@@ -217,7 +217,7 @@ class _EditScreenState extends State<EditScreen> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.05),
+                      color: Colors.black.withValues(alpha: 0.05),
                       blurRadius: 10,
                       offset: const Offset(0, 4),
                     ),
@@ -244,7 +244,9 @@ class _EditScreenState extends State<EditScreen> {
                           color: const Color(0xFFF5F7FA),
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                            color: const Color(0xFF00BCD4).withOpacity(0.3),
+                            color: const Color(
+                              0xFF00BCD4,
+                            ).withValues(alpha: 0.3),
                           ),
                         ),
                         child: Row(
@@ -308,13 +310,17 @@ class _EditScreenState extends State<EditScreen> {
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                           borderSide: BorderSide(
-                            color: const Color(0xFF00BCD4).withOpacity(0.3),
+                            color: const Color(
+                              0xFF00BCD4,
+                            ).withValues(alpha: 0.3),
                           ),
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                           borderSide: BorderSide(
-                            color: const Color(0xFF00BCD4).withOpacity(0.3),
+                            color: const Color(
+                              0xFF00BCD4,
+                            ).withValues(alpha: 0.3),
                           ),
                         ),
                         focusedBorder: OutlineInputBorder(
@@ -342,7 +348,7 @@ class _EditScreenState extends State<EditScreen> {
                       Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF00BCD4).withOpacity(0.1),
+                          color: const Color(0xFF00BCD4).withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Row(
@@ -390,7 +396,7 @@ class _EditScreenState extends State<EditScreen> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF00BCD4).withOpacity(0.3),
+                      color: const Color(0xFF00BCD4).withValues(alpha: 0.3),
                       blurRadius: 15,
                       offset: const Offset(0, 8),
                     ),

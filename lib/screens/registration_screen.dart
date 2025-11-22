@@ -165,7 +165,9 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                         Text(
                           'Join our library community today',
                           style: Theme.of(context).textTheme.bodyMedium
-                              ?.copyWith(color: Colors.white.withOpacity(0.9)),
+                              ?.copyWith(
+                                color: Colors.white.withValues(alpha: 0.9),
+                              ),
                         ),
                         const SizedBox(height: 32),
                         TextFormField(
@@ -174,7 +176,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           decoration: InputDecoration(
                             labelText: 'Full Name',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.person_outline,
@@ -182,12 +184,12 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             ),
                             hintText: 'Enter your full name',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -230,7 +232,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           decoration: InputDecoration(
                             labelText: 'NIK',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.credit_card,
@@ -238,12 +240,12 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             ),
                             hintText: 'Enter your NIK',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -286,7 +288,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           decoration: InputDecoration(
                             labelText: 'Email',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.email_outlined,
@@ -294,12 +296,12 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             ),
                             hintText: 'Enter your email',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -345,7 +347,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           decoration: InputDecoration(
                             labelText: 'Address',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.home_outlined,
@@ -353,12 +355,12 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             ),
                             hintText: 'Enter your address',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -401,7 +403,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           decoration: InputDecoration(
                             labelText: 'Phone Number',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.phone_outlined,
@@ -409,12 +411,12 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             ),
                             hintText: 'Enter your phone number',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -459,7 +461,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           decoration: InputDecoration(
                             labelText: 'Username',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.account_circle_outlined,
@@ -467,12 +469,12 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             ),
                             hintText: 'Choose a username',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -515,7 +517,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                           decoration: InputDecoration(
                             labelText: 'Password',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.lock_outline,
@@ -523,7 +525,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             ),
                             hintText: 'Create a password',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             suffixIcon: IconButton(
                               icon: Icon(
@@ -541,7 +543,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -620,7 +622,7 @@ class _RegistrationScreenState extends State<RegistrationScreen>
                               'Already have an account? ',
                               style: Theme.of(context).textTheme.bodyMedium
                                   ?.copyWith(
-                                    color: Colors.white.withOpacity(0.9),
+                                    color: Colors.white.withValues(alpha: 0.9),
                                   ),
                             ),
                             TextButton(
@@ -663,7 +665,7 @@ class _SquarePatternPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.white.withOpacity(0.1)
+      ..color = Colors.white.withValues(alpha: 0.1)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.5;
 

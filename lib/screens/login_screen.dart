@@ -113,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen>
                               borderRadius: BorderRadius.circular(24),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.black.withOpacity(0.1),
+                                  color: Colors.black.withValues(alpha: 0.1),
                                   blurRadius: 24,
                                   offset: const Offset(0, 12),
                                 ),
@@ -136,7 +136,9 @@ class _LoginScreenState extends State<LoginScreen>
                         Text(
                           'Sign in to continue',
                           style: Theme.of(context).textTheme.bodyMedium
-                              ?.copyWith(color: Colors.white.withOpacity(0.9)),
+                              ?.copyWith(
+                                color: Colors.white.withValues(alpha: 0.9),
+                              ),
                         ),
                         const SizedBox(height: 48),
                         TextFormField(
@@ -145,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen>
                           decoration: InputDecoration(
                             labelText: 'Email or NIK',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.person_outline,
@@ -153,12 +155,12 @@ class _LoginScreenState extends State<LoginScreen>
                             ),
                             hintText: 'Enter your email or NIK',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -201,7 +203,7 @@ class _LoginScreenState extends State<LoginScreen>
                           decoration: InputDecoration(
                             labelText: 'Password',
                             labelStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.9),
+                              color: Colors.white.withValues(alpha: 0.9),
                             ),
                             prefixIcon: const Icon(
                               Icons.lock_outline,
@@ -209,7 +211,7 @@ class _LoginScreenState extends State<LoginScreen>
                             ),
                             hintText: 'Enter your password',
                             hintStyle: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                             suffixIcon: IconButton(
                               icon: Icon(
@@ -227,7 +229,7 @@ class _LoginScreenState extends State<LoginScreen>
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
                               borderSide: BorderSide(
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.white.withValues(alpha: 0.5),
                                 width: 1.5,
                               ),
                             ),
@@ -303,7 +305,7 @@ class _LoginScreenState extends State<LoginScreen>
                               "Don't have an account? ",
                               style: Theme.of(context).textTheme.bodyMedium
                                   ?.copyWith(
-                                    color: Colors.white.withOpacity(0.9),
+                                    color: Colors.white.withValues(alpha: 0.9),
                                   ),
                             ),
                             TextButton(
@@ -347,7 +349,7 @@ class _SquarePatternPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.white.withOpacity(0.1)
+      ..color = Colors.white.withValues(alpha: 0.1)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.5;
 
