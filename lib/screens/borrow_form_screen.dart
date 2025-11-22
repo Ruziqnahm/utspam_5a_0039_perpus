@@ -141,15 +141,32 @@ class _BorrowFormScreenState extends State<BorrowFormScreen> {
                       width: 100,
                       height: 150,
                       decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFF00BCD4), Color(0xFF0097A7)],
-                        ),
                         borderRadius: BorderRadius.circular(12),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            blurRadius: 8,
+                            offset: const Offset(0, 4),
+                          ),
+                        ],
                       ),
-                      child: Center(
-                        child: Text(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.network(
                           widget.book.cover,
-                          style: const TextStyle(fontSize: 50),
+                          width: 100,
+                          height: 150,
+                          fit: BoxFit.cover,
+                          errorBuilder: (context, error, stackTrace) {
+                            return Container(
+                              color: const Color(0xFF00BCD4),
+                              child: const Icon(
+                                Icons.book,
+                                color: Colors.white,
+                                size: 50,
+                              ),
+                            );
+                          },
                         ),
                       ),
                     ),

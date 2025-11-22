@@ -145,24 +145,32 @@ class _DetailScreenState extends State<DetailScreen> {
                     width: 140,
                     height: 200,
                     decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFF00BCD4), Color(0xFF0097A7)],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
                       borderRadius: BorderRadius.circular(16),
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF00BCD4).withOpacity(0.3),
+                          color: Colors.black.withOpacity(0.3),
                           blurRadius: 15,
                           offset: const Offset(0, 8),
                         ),
                       ],
                     ),
-                    child: Center(
-                      child: Text(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(16),
+                      child: Image.network(
                         transaction.bookCover,
-                        style: const TextStyle(fontSize: 70),
+                        width: 140,
+                        height: 200,
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) {
+                          return Container(
+                            color: const Color(0xFF00BCD4),
+                            child: const Icon(
+                              Icons.book,
+                              color: Colors.white,
+                              size: 70,
+                            ),
+                          );
+                        },
                       ),
                     ),
                   ),

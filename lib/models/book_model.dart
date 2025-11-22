@@ -16,66 +16,73 @@ class BookModel {
   static List<BookModel> getDummyBooks() {
     return [
       BookModel(
-        title: 'The Midnight Library',
-        genre: 'Fiction',
+        title: 'The Life of Lions',
+        genre: 'Wild Animals',
         pricePerDay: 15000,
-        cover: '📚',
+        cover:
+            'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=400',
         synopsis:
-            'A stunning exploration of the choices that make us who we are.',
+            'Explore the majestic world of lions and their social structures.',
       ),
       BookModel(
-        title: 'Atomic Habits',
-        genre: 'Self-Help',
+        title: 'Dolphins and Intelligence',
+        genre: 'Marine Animals',
         pricePerDay: 18000,
-        cover: '⚛️',
-        synopsis:
-            'Transform your life with tiny changes that deliver remarkable results.',
+        cover:
+            'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400',
+        synopsis: 'Discover the amazing intelligence and behavior of dolphins.',
       ),
       BookModel(
-        title: 'Project Hail Mary',
-        genre: 'Science Fiction',
+        title: 'The World of Birds',
+        genre: 'Birds',
         pricePerDay: 20000,
-        cover: '🚀',
+        cover:
+            'https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=400',
         synopsis:
-            'A lone astronaut must save the earth from disaster in this gripping tale.',
+            'A comprehensive guide to bird species from around the world.',
       ),
       BookModel(
-        title: 'The Psychology of Money',
-        genre: 'Finance',
+        title: 'Elephants: Gentle Giants',
+        genre: 'Wild Animals',
         pricePerDay: 17000,
-        cover: '💰',
-        synopsis: 'Timeless lessons on wealth, greed, and happiness.',
-      ),
-      BookModel(
-        title: 'Educated',
-        genre: 'Biography',
-        pricePerDay: 16000,
-        cover: '📖',
+        cover:
+            'https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=400',
         synopsis:
-            'A powerful memoir about a young woman who leaves her survivalist family.',
+            'Understanding the complex lives of elephants and their families.',
       ),
       BookModel(
-        title: 'Sapiens',
-        genre: 'History',
+        title: 'Cats: From Wild to Domestic',
+        genre: 'Domestic Animals',
+        pricePerDay: 16000,
+        cover:
+            'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400',
+        synopsis:
+            'The fascinating journey of cats from wild hunters to beloved pets.',
+      ),
+      BookModel(
+        title: 'Wolves and Their Pack',
+        genre: 'Wild Animals',
         pricePerDay: 19000,
-        cover: '🌍',
+        cover:
+            'https://images.unsplash.com/photo-1546527868-ccb7ee7dfa6a?w=400',
         synopsis:
-            'A brief history of humankind from the Stone Age to the modern age.',
+            'Learn about wolf behavior, pack dynamics, and survival strategies.',
       ),
       BookModel(
-        title: 'The Silent Patient',
-        genre: 'Thriller',
+        title: 'Underwater Life: Fish',
+        genre: 'Marine Animals',
         pricePerDay: 16000,
-        cover: '🔍',
-        synopsis:
-            'A woman shoots her husband and then never speaks another word.',
+        cover:
+            'https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=400',
+        synopsis: 'Dive into the colorful and diverse world of fish species.',
       ),
       BookModel(
-        title: 'Ikigai',
-        genre: 'Philosophy',
+        title: 'Dogs: Man\'s Best Friend',
+        genre: 'Domestic Animals',
         pricePerDay: 14000,
-        cover: '🎌',
-        synopsis: 'The Japanese secret to a long and happy life.',
+        cover:
+            'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400',
+        synopsis: 'The history and bond between humans and dogs through ages.',
       ),
     ];
   }

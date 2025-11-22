@@ -110,15 +110,32 @@ class _HistoryScreenState extends State<HistoryScreen> {
                             width: 60,
                             height: 90,
                             decoration: BoxDecoration(
-                              gradient: const LinearGradient(
-                                colors: [Color(0xFF00BCD4), Color(0xFF0097A7)],
-                              ),
                               borderRadius: BorderRadius.circular(10),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                  blurRadius: 6,
+                                  offset: const Offset(0, 3),
+                                ),
+                              ],
                             ),
-                            child: Center(
-                              child: Text(
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: Image.network(
                                 transaction.bookCover,
-                                style: const TextStyle(fontSize: 30),
+                                width: 60,
+                                height: 90,
+                                fit: BoxFit.cover,
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Container(
+                                    color: const Color(0xFF00BCD4),
+                                    child: const Icon(
+                                      Icons.book,
+                                      color: Colors.white,
+                                      size: 30,
+                                    ),
+                                  );
+                                },
                               ),
                             ),
                           ),
