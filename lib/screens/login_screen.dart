@@ -104,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen>
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(height: 40),
+                        const SizedBox(height: 80),
                         Center(
                           child: Container(
                             padding: const EdgeInsets.all(24),
@@ -184,7 +184,7 @@ class _LoginScreenState extends State<LoginScreen>
                               ),
                             ),
                             filled: true,
-                            fillColor: Colors.white.withOpacity(0.1),
+                            fillColor: const Color(0xFF00BCD4),
                           ),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
@@ -253,7 +253,7 @@ class _LoginScreenState extends State<LoginScreen>
                               ),
                             ),
                             filled: true,
-                            fillColor: Colors.white.withOpacity(0.1),
+                            fillColor: const Color(0xFF00BCD4),
                           ),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
