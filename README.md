@@ -1,16 +1,12 @@
 # utspam_5a_0039_perpus
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img src="https://github.com/Ruziqnahm/utspam_5a_0039_perpus/blob/main/screenshots/borrow.jpg" width="200"/>
+  <img src="https://github.com/Ruziqnahm/utspam_5a_0039_perpus/blob/main/screenshots/detail.jpg" width="200"/>
+  <img src="https://github.com/Ruziqnahm/utspam_5a_0039_perpus/blob/main/screenshots/edit.jpg" width="200"/>
+  <img src="https://github.com/Ruziqnahm/utspam_5a_0039_perpus/blob/main/screenshots/history.jpg" width="200"/>
+  <img src="https://github.com/Ruziqnahm/utspam_5a_0039_perpus/blob/main/screenshots/home.jpg" width="200"/>
+  <img src="https://github.com/Ruziqnahm/utspam_5a_0039_perpus/blob/main/screenshots/login.jpg" width="200"/>
+  <img src="https://github.com/Ruziqnahm/utspam_5a_0039_perpus/blob/main/screenshots/profile.jpg" width="200"/>
+  <img src="https://github.com/Ruziqnahm/utspam_5a_0039_perpus/blob/main/screenshots/register.jpg" width="200"/>
+</p>
